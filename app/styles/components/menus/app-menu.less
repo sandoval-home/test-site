@@ -1,16 +1,55 @@
+// Hamburger menu styles are coming from /vendor/hamburger
+// https://jonsuh.com/hamburgers/
+
 /***********************/
 /* Component variables */
 /***********************/
 @textColor: @midgrey;
+@backgroundColor: @darkgrey;
 
 /********************/
 /* Component styles */
 /********************/
 .app-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	color: @textColor;
+	background-color: transparent;
+
+	&.expanded {
+		background-color: @backgroundColor;
+	}
+
+	.app-menu-item {
+		width: 20%;
+	}
+
+	.logo {
+		padding: 0 15px;
+	}
+
+	.nav-menu {
+		display: none;
+		width: 60%;
+		text-align:center;
+
+		&.expanded {
+			display: block;
+		}
+
+		a {
+			padding: 0 20px;
+			color: @textColor;
+			text-decoration: none;
+		}
+	}
+
+	.toggle {
+		text-align: right;
+	}
 }
 
 /********************/
 /* Component mixins */
 /********************/
-

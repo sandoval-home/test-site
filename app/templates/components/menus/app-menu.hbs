@@ -1,1 +1,19 @@
-<h2>Nav menu</h2>
+<div class="app-menu-item logo">
+    <h3>Logo</h3>
+</div>
+<div class="app-menu-item nav-menu">
+    <nav>
+        {{#link-to 'index'}}Home{{/link-to}}
+        {{#link-to 'design'}}Design{{/link-to}}
+        {{#link-to 'data'}}Data{{/link-to}}
+        {{#link-to 'settings'}}Settings{{/link-to}}
+        {{#link-to 'contact'}}Contact{{/link-to}}
+    </nav>
+</div>
+<div class="app-menu-item toggle">
+    <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+</div>
