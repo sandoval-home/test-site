@@ -45,8 +45,10 @@ export default Ember.Component.extend({
 
         // Toggle CSS classes on the affected elements
         component.$('button.hamburger').toggleClass('is-active');
+        component.$('.hamburger-inner').toggleClass('expanded');
         component.$().toggleClass('expanded');
         component.$('.nav-menu').toggleClass('expanded');
+        component.$('.logo').toggleClass('expanded');
     }
 
 });
